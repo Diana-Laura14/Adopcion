@@ -1,0 +1,134 @@
+<!--Declaración de tipo de archivo-->
+<!DOCTYPE html>
+<!--Documento Raíz-->
+<html lang="es">
+    <head>
+           <title>Mis mascotas</title>
+        <link href="estilo.css" rel="stylesheet">
+        
+                    <style>
+                h1 {
+                    color: blue;
+                }
+                h3 {
+                    color: green;
+                }
+
+                p {
+                    color: purple;
+                }
+            </style>
+           
+    </head>
+    <body>
+    <h1>¡Hola, mundo!</h1> <!--Nivel más grande de encabezado-->
+    <h2>¡Hola, mundo!</h2> <!--Etiqueta de apertura + contenido + etiqueta de cierre-->
+    <h3>¡Hola, mundo!</h3>
+    <h4>¡Hola, mundo!</h4>
+    <h5>¡Hola, mundo!</h5>
+    <h6>¡Hola, mundo!</h6>
+    <!--Ejemplo de estilo en línea-->
+<h1 style="color: blue;"> Kira y Lucas </h1>
+
+    <h1 id="Mis-mascotas">Kira y Lucas</h1>
+    <main>
+        <h3>Fotos de Kira y Lucas</h3>
+        <!--img = image, src = source-->
+<img src="C:\Users\Vargas\Documents\Tecnolochicas2023\SEGUNDA EDICION\KiraYLucas\L1.JPG" alt="L1" class="bordes-redondeados"> 
+<hr> <!--Etiqueta hr = Horizontal Rule-->
+<h3>Enlistado de cosas de Kira y Lucas</h3>
+
+        <div> <!--Elemento div-->
+            <p>Cosas que ellos <strong> aman </strong>:</p> <!--strong para hacer la letra negrita-->
+            <H2><em>Listas Para conocer mas a Kira y Lucas</em></H2>
+                <ul id="lista-que-aman"> 
+                    <li>Juguetes</li> <!--li = list item-->
+                    <li>Pollito</li> 
+                    <li>Ir al parque</li> 
+                </ul> 
+  <img src="C:\Users\Vargas\Documents\Tecnolochicas2023\SEGUNDA EDICION\KiraYLucas\K1.JPG" alt="K1" id="imagen-de-kira"> <!--imagen desde nuestro dispositivo-->
+   <p>Cosas no les <strong>gustan</strong>:</p>
+                <!--Listas ordenadas-->
+                <ol class="lista-que-no-aman"> <!--ol = ordered list-->
+                    <li>Truenos</li> <!--li = list item-->
+                    <li><s>bañarse</s></li> <!--Etiqueta 's' para texto tachado-->
+                    <li>ir al veterinario</li> 
+                </ol> 
+        </div>
+            <img src="C:\Users\Vargas\Documents\Tecnolochicas2023\SEGUNDA EDICION\KiraYLucas\K1.JPG" alt="K1" class="imagen-de-kira"> <!--imagen desde nuestro dispositivo-->
+        <br>
+
+         <!--Crear enlaces internos / Enlaces a Secciones Internas-->
+
+         <a href="#comoeskira">¿Como es Kira?</a>
+         <a href="#comoeslucas">¿Como es Lucas?</a>
+         <a href="#Queparecidotiene">¿En que se parecen?</a>
+         <a href="#tienenmashermanos">¿Tienen Hermanos?</a>
+
+        <h3 id="#comoeskira">¿Como es Kira?</h3>
+
+        <p>Kira es muy juguetona, le gusta mucho abrazar. A kira le encantan las papas a la francesa.</p>
+        <p>Kira es feliz cuando sale de paseo. Kira cuida de la casa y de quien vive en ella.</p>
+
+        <h3 id="comoeslucas">¿Como es Lucas?</h3>
+        <p>Lucas, es muy inquieto, le gusta mucho dormir boca arriba y le encantan los premios.</p>
+        <p>A lucas le gusta mucho andar en pijama cuando hace frio. y ama ir al rio.</p>
+        
+        <h3 id="Queparecidotiene">¿En que se parecen?</h3>
+        <p>Se parecen en que los dos les encanta comer, dormir boca arriba e ir de paseo.</p>
+
+        <h3 id="tienenmashermanos">¿Tienen Hermanos?</h3>
+        <p>Kira y Lucas no tienen hermanos de sangre, pero si hermanos de adopcion, una de ellas es Capuchina y el otro es mocho-</p>
+         <!--Crear enlaces externos-->
+        <p>En este link <a href="https://www.google.com/search?q=perritos+chiquitos&sca_esv=575810318&rlz=1C1SQJL_esMX779MX779&tbm=isch&sxsrf=AM9HkKkTow3pQkY-WiGAN0Eq5o7v-PQguw:1698075787761&source=lnms&sa=X&sqi=2&ved=2ahUKEwia5IWhwYyCAxWSnGoFHTzoAukQ_AUoAXoECAEQAw#imgrc=NE3t5uWyTXFwaM" target="_blank" rel="noopener noreferrer">puedes ver más imágenes de Capuchina.</a></p>
+
+
+        <!--Enlaces con imágenes-->
+        <a href="https://www.edgardcooper.com/es/blog/5-razones-para-adoptar-una-mascota/" target="_blank"><img src="C:\Users\Vargas\Documents\Tecnolochicas2023\SEGUNDA EDICION\KiraYLucas\K2.jpeg" alt="K2" id="imagen-con-padding"></a>
+<br>
+<br>
+        <img src= "C:\Users\Vargas\Documents\Tecnolochicas2023\SEGUNDA EDICION\KiraYLucas\L2.jpeg" alt="L2" id="imagen-con-padding">
+
+        <!--Crear enlaces con #. Enlaces muertos o dead links-->
+        <p>Visita nuestro <a href="#" rel="noopener noreferrer">nuevo sitio web aquí</a></p>
+
+            <!--Formulario-->
+            <form action="/enviar-respuesta">
+                <!--Texto y botón enviar-->
+                <input type="text" placeholder="URL de la foto de mi mascota" required>
+                <br>
+                <button type="submit">Enviar</button>
+               
+                <!--Botones de radio-->
+                <p>¿Kira es cachorro o adulto?</p>
+                    <label for="cachorro">
+                        <input id="cachorro" type="radio" value="cachorro" name="cachorro-adulto" checked>Cachorro
+                    </label>
+                    <br>
+                    <label for="adulto">
+                        <input id="adulto" type="radio" value="adulto" name="cachorro-adulto">Adulto
+                    </label>
+                    <br>
+
+
+                <!--Casillas de verificación-->
+                <p>¿Lucas es cachorro o adulto?</p>
+                <label for="cachorro">
+                    <input id="cachorro" type="radio" value="cachorro" name="cachorro-adulto" checked>Cachorro
+                </label>
+                <br>
+                <label for="adulto">
+                    <input id="adulto" type="radio" value="adulto" name="cachorro-adulto">Adulto
+                </label>
+                <br>        
+            </form>
+                    </main>
+                    <!--sirve para poner un video y que se reproduzca hasta dar play-->
+                    <video src="C:\Users\Vargas\Documents\Tecnolochicas2023\SEGUNDA EDICION\KiraYLucas\video.mp4" width="320" height="208" preload="none" controls></video>
+        <!--pie de página-->
+        <footer>
+            <!--Etiqueta small para que el pie de página se vea más pequeño-->
+            <p><small>derechos de autor - <a href="https://tecnolochicas.mx/" target="_blank">tecnolochicas.mx / Diana Laura</a></small></p>
+        </footer>
+     </body>
+</html>
